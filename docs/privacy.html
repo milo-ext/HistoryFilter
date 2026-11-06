@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HistoryFilter Privacy Policy</title>
+<meta name="description" content="How the HistoryFilter browser extension handles browsing history, rules, and local data.">
+<link rel="icon" href="icon128.png">
+<style>
+:root{--bg:#f5f7fa;--surface:#fff;--ink:#17243a;--muted:#58687d;--line:#dde4ed;--accent:#0F766E;--accent-soft:#E6F4F1;color-scheme:light}
+@media(prefers-color-scheme:dark){:root{--bg:#171B1D;--surface:#242A2C;--ink:#E9F0EF;--muted:#A9B7B5;--line:#3A4446;--accent:#5CC4B6;--accent-soft:#1D3533;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+main{max-width:760px;margin:0 auto;padding:40px 16px 72px}
+header{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+header img{width:40px;height:40px}
+h1{font-size:30px;line-height:1.25;letter-spacing:-.03em;margin:0}
+h2{font-size:20px;line-height:1.35;margin:36px 0 10px}
+h3{font-size:16px;margin:24px 0 6px}
+p,li{color:var(--ink)}
+ul{padding-left:22px}
+li+li{margin-top:8px}
+a{color:var(--accent)}
+code{font-size:.9em;background:var(--accent-soft);border-radius:5px;padding:1px 5px;overflow-wrap:anywhere}
+.meta{color:var(--muted);font-size:14px;margin:0 0 20px}
+.lang{display:flex;gap:8px;margin:0 0 28px}
+.lang a{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:5px 12px;font-size:14px;font-weight:600;text-decoration:none}
+.summary{background:var(--accent-soft);border-radius:12px;padding:16px 18px;margin:0 0 8px}
+.summary p{margin:0}
+section+section{border-top:1px solid var(--line);margin-top:56px;padding-top:24px}
+</style>
+</head>
+<body>
+<main>
+<header><img src="icon128.png" alt="" width="40" height="40"><h1>HistoryFilter Privacy Policy</h1></header>
+<p class="meta">Effective date: November 7, 2026 · Publisher: Milo · Contact: <a href="mailto:m66054198@gmail.com">m66054198@gmail.com</a></p>
+<nav class="lang" aria-label="Language"><a href="#en" hreflang="en">English</a><a href="#zh" hreflang="zh-CN">中文</a></nav>
+
+<section id="en" lang="en">
+<div class="summary"><p><strong>In short:</strong> HistoryFilter works entirely inside your browser. It has no server, analytics, advertising, or telemetry, and it never sends your browsing history, rules, or logs to the publisher or anyone else.</p></div>
+
+<p>HistoryFilter lets you create URL rules that remove or rewrite entries in your browser history. This policy covers the Chrome and Firefox versions of the extension.</p>
+
+<h2>Data the extension uses</h2>
+<ul>
+<li><strong>Browsing history URLs and visit metadata.</strong> With the browser's <code>history</code> permission, the extension reads URLs as the browser records visits and, when you request a manual scan, searches history in the range you choose. It uses those URLs only to match your rules. A matching <em>delete</em> rule removes all visits to that URL. A matching <em>normalize</em> rule adds the target URL as a new history entry and removes all visits to the original URL.</li>
+<li><strong>Your rules.</strong> Rule names, URL patterns, actions, options, and template identifiers are stored in extension storage on your device. You can edit, disable, or delete them at any time. A pattern, domain, or target URL you enter may itself be information you consider sensitive.</li>
+<li><strong>Rule export and import files.</strong> <em>Export</em> creates a JSON file containing your rules and saves it through the browser's normal download flow. It contains no browsing history, cleanup plans, or activity logs, and the extension does not send it anywhere. <em>Import</em> reads only the file you select, checks its rules in the page, and saves the accepted rules locally; no copy of the file is kept. Once exported, the file is yours to store or share.</li>
+<li><strong>Interface language.</strong> Your choice of English or Simplified Chinese is saved in extension storage in this browser profile. A URL typed into the rule tester is checked against your rules in the open page only; it is not added to history or saved.</li>
+<li><strong>Manual cleanup preview.</strong> A preview temporarily stores a plan with the matched URLs, target URLs, actions, and a snapshot of your rules in extension session storage, and shows up to 50 example URLs for review. The plan is removed when you execute or cancel it, create a new preview, or the browser clears session storage (browser restart, or extension reload, update, or disable). A plan can be executed only once.</li>
+<li><strong>Activity logs.</strong> Up to 100 entries are kept in extension storage. Each has a timestamp, an action and result code, and possibly numeric totals. Logs contain no URLs, paths, query strings, or free-form error text. You can clear them on the options page.</li>
+</ul>
+
+<h2>Sharing and retention</h2>
+<p>HistoryFilter has no developer-operated server and uses no analytics, advertising, or telemetry services. It does not sell, transfer, or share any data. Rules and activity logs stay on your device until you change or clear them or remove the extension. Cleanup plans are temporary as described above.</p>
+
+<p>Browser history sync is controlled by your browser, independently of this extension. If enabled, history changes may propagate to other devices. HistoryFilter does not disable or manage that synchronization.</p>
+<h2>Permissions</h2>
+<ul>
+<li><code>history</code>: read and change browsing history according to your rules.</li>
+<li><code>storage</code>: save rules, language choice, and activity logs locally, and hold a temporary cleanup plan.</li>
+</ul>
+<p>Rule export and import use the browser's standard download and file picker and need no additional permission.</p>
+
+<h2>Store disclosures</h2>
+<p>The Firefox version declares that it collects no data (<code>data_collection_permissions: none</code>). The Chrome version behaves the same way.</p>
+<h3>Chrome Web Store Limited Use</h3>
+<p>HistoryFilter's use of information received from Chrome APIs complies with the <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use">Chrome Web Store User Data Policy</a>, including its Limited Use requirements. Browsing activity is used only to provide the extension's history-filtering features described above. It is not transferred to the publisher or third parties, used for advertising or credit decisions, or made available for human review.</p>
+
+<h2>Changes</h2>
+<p>If the way HistoryFilter handles data changes, this policy will be updated before the changed version is released, and the effective date above will change.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="mailto:m66054198@gmail.com">m66054198@gmail.com</a></p>
+</section>
+
+<section id="zh" lang="zh-CN">
+<h2 style="margin-top:0">HistoryFilter 隐私政策（中文）</h2>
+<p class="meta">生效日期：2026 年 11 月 7 日 · 发布者：Milo</p>
+<div class="summary"><p><strong>简而言之：</strong>HistoryFilter 的所有处理都在你的浏览器内完成。它没有服务器，不使用分析、广告或遥测服务，也从不把你的浏览历史、规则或日志发送给发布者或任何第三方。</p></div>
+
+<p>HistoryFilter 允许你创建 URL 规则，删除或改写浏览器历史记录中的条目。本政策适用于该扩展的 Chrome 和 Firefox 版本。</p>
+
+<h2>扩展使用的数据</h2>
+<ul>
+<li><strong>浏览历史 URL 及访问信息。</strong>通过浏览器的 <code>history</code> 权限，扩展会在浏览器记录访问时读取 URL；当你手动发起扫描时，会在你选择的时间范围内搜索历史记录。这些 URL 只用于匹配你的规则。命中“删除”规则时，会删除该 URL 的全部访问记录；命中“净化”规则时，会把目标 URL 作为新的历史条目写入，并删除原 URL 的全部访问记录。</li>
+<li><strong>你的规则。</strong>规则名称、URL 匹配条件、处理方式、选项和模板标识保存在你设备上的扩展存储中，你可以随时编辑、停用或删除。你输入的匹配条件、域名或目标 URL 本身可能包含你认为敏感的信息。</li>
+<li><strong>规则导出与导入文件。</strong>“导出”会生成一个包含你的规则的 JSON 文件，通过浏览器的常规下载流程保存。文件中不含浏览历史、清理计划或活动记录，扩展也不会把它发送到任何地方。“导入”只读取你选择的文件，在页面内校验规则后把通过校验的规则保存在本地，不保留文件副本。导出后的文件由你自行保管或分享。</li>
+<li><strong>界面语言。</strong>你选择的中文或英文界面保存在当前浏览器配置的扩展存储中。在规则测试框中输入的 URL 只在打开的页面内与规则比对，不会写入历史，也不会被保存。</li>
+<li><strong>手动清理预览。</strong>预览时，扩展会在扩展会话存储中临时保存一份计划，包含命中的 URL、目标 URL、处理方式和规则快照，并最多展示 50 条示例 URL 供你核对。执行或取消计划、重新预览，或浏览器清空会话存储（重启浏览器，或重新加载、更新、停用扩展）时，计划会被移除。每份计划只能执行一次。</li>
+<li><strong>活动记录。</strong>扩展存储中最多保留 100 条记录，每条包含时间、动作与结果代码，以及可能的数字统计。记录中不含 URL、路径、查询参数或自由文本错误信息。你可以在设置页面清空活动记录。</li>
+</ul>
+
+<h2>共享与保留</h2>
+<p>HistoryFilter 没有开发者运营的服务器，不使用分析、广告或遥测服务，不出售、转移或共享任何数据。规则和活动记录会保留在你的设备上，直到你修改、清空它们或移除扩展。清理计划按上文所述临时保存。</p>
+
+<p>浏览器历史同步由浏览器独立管理。开启同步时，历史变更可能传播到其他设备；HistoryFilter 不会关闭或管理浏览器同步。</p>
+<h2>权限</h2>
+<ul>
+<li><code>history</code>：按你的规则读取和修改浏览历史。</li>
+<li><code>storage</code>：在本地保存规则、语言选择和活动记录，并临时保存清理计划。</li>
+</ul>
+<p>规则导出和导入使用浏览器标准的下载和文件选择功能，不需要额外权限。</p>
+
+<h2>商店声明</h2>
+<p>Firefox 版本声明不收集任何数据（<code>data_collection_permissions: none</code>），Chrome 版本的行为相同。</p>
+<h3>Chrome 网上应用店有限使用声明</h3>
+<p>HistoryFilter 对从 Chrome API 获取的信息的使用，遵守 <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use">Chrome 网上应用店用户数据政策</a>，包括其中的“有限使用”要求。浏览活动仅用于提供上文所述的历史过滤功能，不会转移给发布者或第三方，不会用于广告或信用评估，也不会供人工查看。</p>
+
+<h2>变更</h2>
+<p>如果 HistoryFilter 处理数据的方式发生变化，会在发布相应版本之前更新本政策，并同步更新页首的生效日期。</p>
+
+<h2>联系方式</h2>
+<p>如对本政策有疑问，请联系：<a href="mailto:m66054198@gmail.com">m66054198@gmail.com</a></p>
+</section>
+</main>
+</body>
+</html>

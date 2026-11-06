@@ -1,0 +1,30 @@
+name: Bug report / 问题反馈
+description: Report unexpected behavior using synthetic or redacted examples.
+body:
+  - type: markdown
+    attributes:
+      value: Please do not post private browsing history, tokens, or a full rules export. Use example.com or another synthetic URL. 请勿提交真实浏览历史、令牌或完整规则导出；请使用脱敏示例。
+  - type: input
+    id: versions
+    attributes:
+      label: Browser, extension version, OS / 浏览器、扩展版本、系统
+      placeholder: Firefox 156, HistoryFilter 1.0.0, macOS
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps and expected behavior / 操作步骤与预期结果
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior / 实际结果
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Synthetic rule and URL / 脱敏规则与 URL
+      description: Include rule order and whether the problem involves automatic processing or manual cleanup.

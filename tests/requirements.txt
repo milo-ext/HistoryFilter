@@ -1,0 +1,3 @@
+# Browser acceptance tools only; not shipped in extension ZIPs.
+playwright==1.60.0
+selenium==4.52.0

@@ -1,0 +1,11 @@
+{
+  "extName": {
+    "message": "HistoryFilter"
+  },
+  "extDescription": {
+    "message": "用自定义 URL 规则删除或改写匹配的浏览记录，让历史和地址栏建议保持干净，全部在本地处理。"
+  },
+  "actionTitle": {
+    "message": "打开 HistoryFilter 规则"
+  }
+}

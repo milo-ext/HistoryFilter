@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HistoryFilter — Help / 使用帮助</title>
+<link rel="stylesheet" href="options.css">
+<link rel="icon" href="../../assets/icons/icon32.png">
+<style>body{padding:32px 20px}main{max-width:760px;margin:auto;line-height:1.7}h1{font-size:28px;display:flex;align-items:center;gap:12px}h2{margin-top:30px;font-size:20px}section+section{border-top:1px solid var(--line);margin-top:44px;padding-top:20px}code{overflow-wrap:anywhere}nav{display:flex;gap:20px}li{margin:8px 0}</style>
+</head>
+<body><main>
+<h1><img src="../../assets/icons/icon48.png" alt="" width="40" height="40">HistoryFilter</h1>
+<nav aria-label="Language"><a href="#en">English</a><a href="#zh">中文</a><a href="options.html">Settings / 设置</a></nav>
+<section id="en" lang="en">
+<h2>Start with one rule</h2>
+<p>New installations include a disabled Google Translate rule. Review its explanation and turn on its switch if you want that cleanup. You can also choose <strong>Add from template</strong>, or create a rule. Templates you add are enabled. Existing saved settings stay unchanged when you update.</p>
+<p>Use <strong>Test a URL</strong> to check a synthetic example before browsing. The first enabled matching rule wins. Domain rules include subdomains. Saving a rule does not bulk-clean existing history.</p>
+<h2>What changes, and what does not?</h2>
+<ul>
+<li><strong>Delete</strong> removes every visit to the matched URL, permanently. Revisiting that same URL can also remove its older visits.</li>
+<li><strong>Normalize</strong> adds the clean URL as a new visit at the current time, then deletes all visits to the original URL. It does not preserve the original visit times or guarantee the original page title.</li>
+<li><strong>Manual cleanup</strong> scans URLs by their last visit in the chosen range. It shows totals and at most 50 samples. Confirmation deletes all visits to those URLs, including visits outside that range or added after preview. There is no undo.</li>
+<li>Automatic cleanup happens after a visit is recorded. Removing UTM parameters from history does not stop a website from receiving them.</li>
+<li>Bookmarks, open tabs and search-provider suggestions may still appear in the address bar. HistoryFilter only changes browser history.</li>
+<li>Browser history synchronization is separate. When enabled, history changes may propagate to other devices. Check your browser’s sync settings before cleaning up.</li>
+</ul>
+<h2>Pause or troubleshoot</h2>
+<p>Turn off a rule to stop future automatic processing by that rule. To pause all processing, disable HistoryFilter in your browser’s extensions manager. Turning off or uninstalling the extension cannot restore deleted history.</p>
+<p>If a rule does not work, check that it is enabled, use the URL tester, and check rules above it. Unsupported older regexes are marked and skipped; their definitions remain stored and exportable. Prefer domain, path and query-key conditions for common cases. The regex editor explains its supported syntax.</p>
+<p>If another settings tab changes a rule while you edit it, saving is rejected. Copy any unsaved text you need, close the dialog, and reopen the latest rule. A replacement import must also be reopened after the rule list changes.</p>
+<p>For partial or interrupted cleanup, review Activity, then preview again. Logs contain actions, counts and codes, not URLs. They are a recent activity summary, not a history backup.</p>
+<h2>Rules and privacy</h2>
+<p>Read the <a href="https://milo-ext.github.io/HistoryFilter/privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.</p>
+<p>Export rules before replacing them. Export files contain rules only; they cannot restore browsing history. Imports accept up to 1 MB and 500 rules, skip invalid entries, and never scan old history automatically. Rules are local to the browser profile.</p>
+<p>The extension has no account, server, analytics, advertising or telemetry. It uses history and storage permissions. Preview plans temporarily contain full URLs in session storage; restarting the browser clears them. Closing the settings tab alone does not.</p>
+<p>For a bug report, provide browser and extension versions, the steps, expected behavior and a synthetic URL such as <code>https://example.com/path</code>. Do not publish private history, tokens or a full rules export. Report bugs through <a href="https://github.com/milo-ext/HistoryFilter/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a>.</p>
+</section>
+<section id="zh" lang="zh-CN">
+<h2>先启用一条规则</h2>
+<p>新安装时，内置的 Google 翻译规则默认关闭。请先阅读效果说明，需要时再打开开关。也可以选择<strong>从模板添加</strong>或自行创建规则；主动添加的模板会启用。更新扩展会保留你已有的设置。</p>
+<p>先用<strong>试一条 URL</strong>检查脱敏示例。只执行第一条已启用且匹配的规则；域名规则包含子域名。保存规则不会批量清理旧历史。</p>
+<h2>会改变哪些记录？</h2>
+<ul>
+<li><strong>删除</strong>会永久删除命中 URL 的全部访问记录。再次访问同一个命中 URL，也可能删除它以前的访问。</li>
+<li><strong>净化</strong>先以当前时间添加干净 URL，再删除原 URL 的全部访问；不保留原来的访问时间，也不保证保留原标题。</li>
+<li><strong>手动清理</strong>按 URL 的最后访问时间筛选范围，展示总数及最多 50 条样本。确认后会删除这些 URL 的全部访问，包括日期范围之外、或预览后新增的访问。无法撤销。</li>
+<li>自动清理发生在访问被记录之后。从历史中删除 UTM 参数，不会阻止网站收到这些参数。</li>
+<li>书签、打开的标签、搜索服务的建议仍可能出现在地址栏。本扩展只改变浏览历史。</li>
+<li>浏览器历史同步独立运行；启用时，历史变更可能同步到其他设备。清理前请检查浏览器同步设置。</li>
+</ul>
+<h2>暂停与排查</h2>
+<p>关闭规则开关可停止该规则的后续自动处理。要暂停全部处理，请在浏览器扩展管理中停用 HistoryFilter。停用或卸载不会恢复已删除的历史。</p>
+<p>规则不生效时，请检查开关、用 URL 测试器确认效果，并检查更靠前的规则。不受支持的旧正则会标记并跳过，其原文仍保存且可以导出。常见场景优先使用域名、路径、参数名条件；正则编辑器说明了支持的语法。</p>
+<p>在编辑期间，其他设置页若改变了同一规则，本次保存会被拒绝。请先复制需要保留的未保存内容，关闭对话框，再打开最新规则。规则列表改变后，也需要重新打开替换导入的确认对话框。</p>
+<p>清理部分失败或被中断时，请查看活动记录，再重新预览。活动记录只保存动作、数量和结果代码，不含 URL；它是近期操作摘要，不是历史备份。</p>
+<h2>规则与隐私</h2>
+<p>请阅读<a href="https://milo-ext.github.io/HistoryFilter/privacy.html" target="_blank" rel="noopener noreferrer">隐私政策</a>。</p>
+<p>替换规则前请先导出。导出文件只包含规则，不能恢复浏览历史。导入最多接受 1 MB、500 条规则，跳过无效项，不会自动扫描旧历史。规则只保存在当前浏览器配置中。</p>
+<p>本扩展没有账号、服务器、分析、广告或遥测，仅使用历史和存储权限。预览计划会在会话存储中暂存完整 URL，重启浏览器后清除；只关闭设置页不会清除。</p>
+<p>反馈问题时，请提供浏览器和扩展版本、操作步骤、预期结果及 <code>https://example.com/path</code> 这样的脱敏示例。不要公开真实历史、令牌或完整规则导出文件。请通过 <a href="https://github.com/milo-ext/HistoryFilter/issues" target="_blank" rel="noopener noreferrer">GitHub Issues 反馈问题</a>。</p>
+</section>
+</main></body></html>

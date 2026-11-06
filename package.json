@@ -1,0 +1,14 @@
+{
+  "name": "historyfilter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24 <25" },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "build": "python3 release/build_package.py --browser all"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "2.6.2"
+  }
+}

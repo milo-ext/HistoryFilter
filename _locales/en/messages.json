@@ -1,0 +1,11 @@
+{
+  "extName": {
+    "message": "HistoryFilter"
+  },
+  "extDescription": {
+    "message": "Keep history and address-bar suggestions clean: delete or rewrite matching URLs with your own rules, locally."
+  },
+  "actionTitle": {
+    "message": "Open HistoryFilter rules"
+  }
+}
