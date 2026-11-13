@@ -2,6 +2,13 @@
 
 HistoryFilter cleans browser history with ordered URL rules. One WebExtension source tree builds Manifest V3 packages for Chrome and Firefox. Processing stays in the browser; there are no runtime dependencies, analytics, or developer-operated servers.
 
+## Install
+
+- **Chrome** (121 or newer): [Chrome Web Store](https://chromewebstore.google.com/detail/historyfilter/cjpfcacmhemigfdhmmjjfcbmipaiiekg)
+- **Firefox** (140 or newer, desktop): [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/historyfilter/)
+
+The sections below are for building and testing from source.
+
 ## Build and try locally
 
 ```sh
